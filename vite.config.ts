@@ -5,7 +5,7 @@ import { visualizer } from 'rollup-plugin-visualizer'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/portfolio-01/',
+  base: "./",  // Ensures relative paths
   plugins: [
     react({
       babel: {
@@ -31,6 +31,7 @@ export default defineConfig({
     })
   ],
   build: {
+    outDir: "dist",
     rollupOptions: {
       input: 'src/main.tsx',
       output: {
