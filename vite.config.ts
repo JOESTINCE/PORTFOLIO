@@ -32,6 +32,7 @@ export default defineConfig({
   ],
   build: {
     rollupOptions: {
+      input: 'src/main.ts',
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom', 'framer-motion', '@emotion/react', '@emotion/styled'],
