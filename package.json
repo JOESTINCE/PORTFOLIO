@@ -3,9 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "src/index.ts",
+  "main": "src/main.tsx",
   "scripts": {
-    "build": "react-scripts build",
+    "build": "vite build",
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview",
