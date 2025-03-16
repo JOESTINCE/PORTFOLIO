@@ -6,7 +6,11 @@
   "main": "src/index.ts",
   "scripts": {
     "build": "react-scripts build",
-    "lint": "eslint ."
+    "dev": "vite",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"  
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
